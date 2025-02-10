@@ -1,0 +1,31 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("Digite a quantidade da sequencia:");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			int[] sequen = new int[n1];
+			int maior = 0;
+			
+			for (int i = 0; i <sequen.Length ; i++) {
+				sequen[i] = Convert.ToInt32(Console.ReadLine());
+				if (maior < sequen[i]) {
+					maior = sequen[i];
+				
+			}
+			}
+			Console.WriteLine("o maior numero é: "+ maior);
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+		
+	}
+}
