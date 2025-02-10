@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("Digite um numero");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			for (int i = 2; i <= n1; i++) {
+				if (n1 % i == 0) {
+					Console.WriteLine("não é primo");
+					break;
+				}else{
+					Console.WriteLine("é primo");
+					break;
+				}
+			}
+			Console.Write("Pressione para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
