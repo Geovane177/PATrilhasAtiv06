@@ -1,0 +1,27 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int soma = 0;
+			for (int i = 1; i <= 100; i++) {
+				if (i % 2 == 0) {
+					soma += i;
+				}
+			 
+			
+				
+			}
+			Console.WriteLine("Soma: "+ soma);
+		
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+		
+	}
+}
