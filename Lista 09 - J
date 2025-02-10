@@ -1,0 +1,69 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int[] mercadoria = new int[40];
+			double total = 0;
+			string[] nome = new string[40];
+					int[] estoque = new int[40];
+					double[] preço = new double[40];
+					int escolha = 0;
+					int esc = 0;
+			while (escolha != 3) {
+				
+					
+			Console.WriteLine("========MENU========");
+			Console.WriteLine("1. Cadastrar mercadorias");
+			Console.WriteLine("2. Exibe valor total de mercadorias da empresa");
+			Console.WriteLine("3. Sair");
+			escolha = Convert.ToInt32(Console.ReadLine());
+			
+					
+					
+				if (escolha == 1) {
+					
+				
+					Console.WriteLine("Gostaria de cadastrar a partir de qual produto? ");
+					int cadastro = Convert.ToInt32(Console.ReadLine());
+					
+					for (int i = cadastro; i < 40; i++) {
+					Console.WriteLine("Nome do produto "+ i);
+					nome[i] = Convert.ToString(Console.ReadLine().ToLower());
+					Console.WriteLine("Estoque do produto "+ i);
+					estoque[i] = Convert.ToInt32(Console.ReadLine());
+					Console.WriteLine("Preço unitario do produto "+ i);
+					preço[i] = Convert.ToDouble(Console.ReadLine());
+				total = preço[i] * estoque[i] + total;
+				Console.WriteLine("Deseja continuar? 1 - sim / 2 - não");
+				esc = Convert.ToInt32(Console.ReadLine());
+				if (esc == 2) {
+					break;
+				}
+							}
+					     
+					
+					Console.WriteLine("Produtos cadastrador com sucesso!");
+					Console.ReadKey(true);
+					Console.Clear();
+						             
+					}
+			else if (escolha == 2) {
+					
+				Console.WriteLine(total);
+				Console.ReadKey(true);
+				Console.Clear();
+			}	else if (escolha == 3) {
+				
+				Console.WriteLine("Até breve. . .");
+			}
+			
+								}
+			Console.ReadKey(true);
+					}
+				
+		}
+					}
