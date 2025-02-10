@@ -1,0 +1,24 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite um numero");
+			string palavra = Convert.ToString(Console.ReadLine());
+			
+			for (int i = 0; i <= palavra.Length; i++) {
+			
+				Console.WriteLine(palavra[i]);
+				}
+				
+			
+			
+			
+			Console.Write("Pressione para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
