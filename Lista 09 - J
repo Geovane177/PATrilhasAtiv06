@@ -38,9 +38,9 @@ namespace Atividades
 					Console.WriteLine("Preço unitario do produto "+ i);
 					preço[i] = Convert.ToDouble(Console.ReadLine());
 				total = preço[i] * estoque[i] + total;
-				Console.WriteLine("Deseja continuar? 1 - sim / 2 - não");
+				Console.WriteLine("Deseja parar? 1 - sim / 2 - não");
 				esc = Convert.ToInt32(Console.ReadLine());
-				if (esc == 2) {
+				if (esc == 1) {
 					break;
 				}
 							}
@@ -67,3 +67,4 @@ namespace Atividades
 				
 		}
 					}
+					
