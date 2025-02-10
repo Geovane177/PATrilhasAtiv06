@@ -1,0 +1,22 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int[] n1 = new int[3];
+			int media = 0;
+			Console.WriteLine("Digite 3 números: ");
+			for (int i = 0; i < n1.Length; i++) {
+				n1[i] = int.Parse(Console.ReadLine());
+				media += n1[i];
+			}			
+			media = media / n1.Length;
+			Console.WriteLine(media);
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
