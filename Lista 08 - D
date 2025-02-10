@@ -1,0 +1,23 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int soma = 0;
+			Console.WriteLine("Digite um numero");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			for (int i = 0; i <= n1; i++) {
+			
+				soma += i;
+				}
+			Console.WriteLine(soma);
+				
+			Console.Write("Pressione para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
