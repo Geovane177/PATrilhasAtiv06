@@ -1,0 +1,27 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite o numero da tabuada: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			int mul = 0;
+			for (int i = 5; i <= 10; i++) {
+				
+				mul = n1 * i;
+				Console.WriteLine(n1 +" X "+ i +" = "+ mul);
+				
+			}
+			Console.WriteLine("");
+		
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+		
+	}
+}
